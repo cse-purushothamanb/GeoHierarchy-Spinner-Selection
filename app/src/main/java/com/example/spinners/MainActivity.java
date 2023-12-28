@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textView;
     private DBHandler dbHandler;
     Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("https://maps.ksrsac.in/")
+            .baseUrl("<Base URL>")
             .addConverterFactory(GsonConverterFactory.create())
             .build();
     ApiService apiService = retrofit.create(ApiService.class);
